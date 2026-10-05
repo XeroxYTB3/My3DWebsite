@@ -6,6 +6,7 @@
 <title>Impressions 3D — Objets utiles, déco et sur mesure</title>
 <meta name="description" content="Supports de téléphone, organisateurs, porte-câbles, figurines et impressions 3D personnalisées. Commande par message.">
 <meta name="theme-color" content="#1f7ae0">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 48 48%22%3E%3Cpath d=%22M24 22L38 30L24 38L10 30Z%22 fill=%22%237fd0ff%22/%3E%3Cpath d=%22M10 30L24 38V44L10 36Z%22 fill=%22%231558b0%22/%3E%3Cpath d=%22M38 30L24 38V44L38 36Z%22 fill=%22%232f8cf0%22/%3E%3Cpath d=%22M24 14L38 22L24 30L10 22Z%22 fill=%22%237fd0ff%22/%3E%3Cpath d=%22M10 22L24 30V36L10 28Z%22 fill=%22%231558b0%22/%3E%3Cpath d=%22M38 22L24 30V36L38 28Z%22 fill=%22%232f8cf0%22/%3E%3Cpath d=%22M24 6L38 14L24 22L10 14Z%22 fill=%22%23b9eaff%22/%3E%3Cpath d=%22M10 14L24 22V28L10 20Z%22 fill=%22%231558b0%22/%3E%3Cpath d=%22M38 14L24 22V28L38 20Z%22 fill=%22%232f8cf0%22/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
@@ -19,7 +20,9 @@ body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:var(--ink);line-
 h1,h2,h3{font-family:'Bricolage Grotesque','Plus Jakarta Sans',system-ui,sans-serif;letter-spacing:-.03em;line-height:1.02}
 img{display:block;max-width:100%}a{color:inherit}a:focus-visible,button:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
 .nav{position:fixed;inset:0 0 auto;z-index:50;padding:calc(12px + env(safe-area-inset-top,0px)) clamp(14px,3vw,36px) 12px;display:flex;align-items:center;justify-content:space-between;gap:16px;background:var(--glass);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
-.logo{display:flex;align-items:center;gap:10px;font:800 20px 'Bricolage Grotesque',sans-serif;letter-spacing:-.02em;text-decoration:none}.logo svg{width:32px;height:32px}.logo b{color:var(--blue)}
+.logo{display:flex;align-items:center;gap:10px;font:800 20px 'Bricolage Grotesque',sans-serif;letter-spacing:-.02em;text-decoration:none}.logo .mk{width:36px;height:36px;flex:0 0 auto;transition:transform .4s cubic-bezier(.2,.8,.3,1);filter:drop-shadow(0 6px 12px rgba(31,122,224,.35))}
+.logo:hover .mk,.logo:focus-visible .mk{transform:translateY(-2px) rotate(-5deg) scale(1.06)}
+.logo b{color:var(--blue)}
 .links{display:flex;gap:4px}.links a{padding:9px 16px;border-radius:99px;font-weight:700;font-size:15px;text-decoration:none;color:var(--mut);transition:.2s}.links a:hover{color:var(--ink);background:var(--line)}
 .prog{position:absolute;left:0;bottom:-1px;height:3px;width:100%;background:linear-gradient(90deg,var(--sky),var(--blue));transform:scaleX(0);transform-origin:left}
 .btn{display:inline-flex;align-items:center;gap:10px;padding:15px 26px;border-radius:99px;font-weight:700;font-size:16px;text-decoration:none;color:#fff;border:0;cursor:pointer;transition:transform .2s,box-shadow .2s}
@@ -64,16 +67,17 @@ h1{font-size:clamp(40px,7vw,100px);font-weight:800;margin-top:22px}h1 em{font-st
 .num{display:block;margin-top:26px;font:800 clamp(32px,5.6vw,66px)/1 'Bricolage Grotesque',sans-serif;letter-spacing:-.02em;color:var(--blue);text-decoration:none}
 .ft{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;width:min(1180px,92vw);margin:0 auto;padding:30px 0 40px;border-top:1px solid var(--line);color:var(--mut);font-size:14px;font-weight:500;position:relative}.ft a{font-weight:700;text-decoration:none}
 @media(max-width:860px){.links{display:none}#hw{grid-template-columns:1fr;gap:2.5vh;padding-top:70px;text-align:left}h1{font-size:clamp(34px,10.5vw,60px);margin-top:14px}.lead{margin-top:12px;font-size:16px}.cta{margin-top:16px}.pw{max-width:min(240px,32svh)}.c1,.c2,.c3{display:none}.print{aspect-ratio:1;border-radius:30px;border-width:6px}.sl{grid-template-columns:1fr;gap:3vh}.sl.r .pc{order:0}.pc{aspect-ratio:16/11;max-height:36svh;width:100%;border-radius:28px;border-width:7px}.dots{display:none}.hint{display:none}}
-@media(max-width:860px){.sth{top:calc(78px + env(safe-area-inset-top,0px))}.ss{padding-top:10svh}.bc h2{font-size:clamp(34px,11vw,64px)}#pn{border-radius:32px}.btn{padding:13px 22px;font-size:15px}.track{padding:0 6vw}.tl{border-radius:26px}.gw{font-size:34vw}}
+@media(max-width:860px){.sth{top:calc(78px + env(safe-area-inset-top,0px))}.ss{padding-top:10svh}.bc h2{font-size:clamp(34px,11vw,64px)}#pn{border-radius:32px}.btn{padding:13px 22px;font-size:15px}.track{padding:0 6vw}.tl{border-radius:26px}.gw{font-size:34vw}.logo .mk{width:32px;height:32px}}
 @media(max-height:560px) and (orientation:landscape){.lead,.hint{display:none}#hw{padding-top:56px}.pw{max-width:min(200px,40svh)}.pc{max-height:60svh}.ss i{font-size:90px}.sth{top:64px}}
 @media(hover:none){.btn:hover{transform:none;box-shadow:none}.links a:hover{background:none;color:var(--mut)}}
-#mg{display:none}
-@media(max-width:860px){#m,.prog{display:none}#mg{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:calc(84px + env(safe-area-inset-top,0px)) 14px 28px}.mt{position:relative;aspect-ratio:1;border-radius:22px;overflow:hidden;background:var(--card);border:1px solid var(--line);opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}.mt.in{opacity:1;transform:none}.mt:nth-child(even){transition-delay:.08s}.mt img{width:100%;height:100%;object-fit:cover}.mt figcaption{position:absolute;left:0;right:0;top:0;padding:12px 14px 26px;color:#fff;font:800 17px/1.1 'Bricolage Grotesque',sans-serif;letter-spacing:-.02em;background:linear-gradient(rgba(6,19,42,.78),transparent)}}
-@media(prefers-reduced-motion:reduce){.mt{transition:none}}
+#mg,#mc{display:none}
+@media(max-width:860px){#m,.prog{display:none}#mg{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:calc(84px + env(safe-area-inset-top,0px)) 14px 28px}.mt{position:relative;aspect-ratio:1;border-radius:22px;overflow:hidden;background:var(--card);border:1px solid var(--line);opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}.mt.in{opacity:1;transform:none}.mt:nth-child(even){transition-delay:.08s}.mt img{width:100%;height:100%;object-fit:cover}#mc{display:block;margin:0 14px 28px;padding:30px 20px;background:var(--card);border:1px solid var(--line);border-radius:28px;text-align:center;box-shadow:var(--sh)}#mc h2{font-size:clamp(28px,8vw,40px);font-weight:800}#mc p{margin-top:10px;color:var(--mut);font-size:16px;font-weight:500}#mc .bt{margin-top:20px}#mc .num{margin-top:20px;font-size:clamp(30px,9vw,44px)}.mt figcaption{position:absolute;left:0;right:0;top:0;padding:12px 14px 26px;color:#fff;font:800 17px/1.1 'Bricolage Grotesque',sans-serif;letter-spacing:-.02em;background:linear-gradient(rgba(6,19,42,.78),transparent)}}
+@media(prefers-reduced-motion:reduce){.mt{transition:none}.logo .mk{transition:none}}
 </style>
 </head>
 <body>
-<header class="nav"><a class="logo" href="#hero" data-go="hero:0"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 16l12-7v14l-12 7z" fill="#1f7ae0"/><path d="M16 2l12 7-12 7L4 9z" fill="#4cb7ff"/><path d="M4 9l12 7v14L4 23z" fill="#1558b0"/></svg><span>Impressions <b>3D</b></span></a>
+<header class="nav"><a class="logo" href="#hero" data-go="hero:0" aria-label="Impressions 3D — accueil">
+<svg class="mk" viewBox="0 0 48 48" role="img" aria-hidden="true" focusable="false"><defs><linearGradient id="mkT" x1=".1" y1="0" x2=".9" y2="1"><stop offset="0" stop-color="#b9eaff"/><stop offset="1" stop-color="#4cb7ff"/></linearGradient><linearGradient id="mkL" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1f7ae0"/><stop offset="1" stop-color="#0c3f87"/></linearGradient><linearGradient id="mkR" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4cb7ff"/><stop offset="1" stop-color="#1768c9"/></linearGradient></defs><path d="M24 22L38 30L24 38L10 30Z" fill="#7fd0ff"/><path d="M10 30L24 38V44L10 36Z" fill="url(#mkL)"/><path d="M38 30L24 38V44L38 36Z" fill="url(#mkR)"/><path d="M24 14L38 22L24 30L10 22Z" fill="#7fd0ff"/><path d="M10 22L24 30V36L10 28Z" fill="url(#mkL)"/><path d="M38 22L24 30V36L38 28Z" fill="url(#mkR)"/><path d="M24 6L38 14L24 22L10 14Z" fill="url(#mkT)"/><path d="M10 14L24 22V28L10 20Z" fill="url(#mkL)"/><path d="M38 14L24 22V28L38 20Z" fill="url(#mkR)"/><path d="M24 6L38 14L24 22L10 14Z" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width=".8" stroke-linejoin="round"/></svg><span>Impressions <b>3D</b></span></a>
 <nav class="links"><a href="#prod" data-go="prod:.06">Créations</a><a href="#gamme" data-go="gamme:.3">Gamme</a><a href="#commander" data-go="commander:.1">Commander</a></nav><a class="btn p" href="#contact" data-go="contact:1">Contact</a><i class="prog" id="prog"></i></header>
 <main id="m"><div class="stage">
 <div class="ly" id="hero"><div id="hw">
@@ -94,6 +98,7 @@ h1{font-size:clamp(40px,7vw,100px);font-weight:800;margin-top:22px}h1 em{font-st
 <a class="num ci" href="tel:+33752088831">07 52 08 88 31</a></div></div>
 </div></main>
 <section id="mg" aria-label="Galerie"></section>
+<section id="mc" aria-label="Contact"></section>
 <footer class="ft"><span>© 2026 Impressions 3D — Objets utiles, déco et sur mesure</span><a href="tel:+33752088831">07 52 08 88 31</a></footer>
 <script>
 const IMG={cle:'assets/image1',vase:'assets/image2',support:'assets/image3',cachepot:'assets/image4',boite:'assets/image5',fox:'assets/image6',crochet:'assets/image7',gear:'assets/image8',figurine:'assets/image9',phone:'assets/image10',stylos:'assets/image11',cable:'assets/image12'};
@@ -117,6 +122,7 @@ const TL=[['cle','Porte-clés','Simples ou personnalisés.'],['vase','Vases','D�
 const trk=$('#trk');trk.innerHTML=TL.map(([k,n,d])=>`<article class="tl"><img data-img="${k}" alt="${n} imprimé en 3D"><h3>${n}</h3><p>${d}</p></article>`).join('');
 const mg=$('#mg');mg.innerHTML=TL.map(([k,n])=>`<figure class="mt"><img data-img="${k}" alt="${n}"><figcaption>${n}</figcaption></figure>`).join('');
 if('IntersectionObserver' in window&&!RM){const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});$$('.mt',mg).forEach(t=>io.observe(t))}else $$('.mt',mg).forEach(t=>t.classList.add('in'));
+$('#mc').innerHTML=$('#pn').innerHTML;
 const bh=$('#bh');bh.innerHTML=bh.textContent.split(' ').map(w=>`<span class="wd">${w}</span>`).join(' ');
 $$('[data-img]').forEach(loadImg);
 /* scenes */
@@ -161,7 +167,7 @@ const F=IDS.map(i=>FN[i]),LP=[];let U=null;
  LY.forEach((el,i)=>{const v=U>S[i]-1&&(i==L.length-1||U<S[i]+L[i]+1);el.style.visibility=v?'visible':'hidden';
   if(v){const p=cl((U-S[i])/L[i]);if(p!==LP[i]||(i==0&&performance.now()-t0<1900)){F[i](p);LP[i]=p}}});
  $('#prog').style.transform=`scaleX(${cl(U/tot)})`;requestAnimationFrame(loop)})();
-$$('[data-go]').forEach(a=>a.addEventListener('click',ev=>{ev.preventDefault();if(MQ.matches){scrollTo({top:a.dataset.go.startsWith('hero')?0:document.body.scrollHeight,behavior:'smooth'});return}const [id,f]=a.dataset.go.split(':'),i=IDS.indexOf(id);
+$$('[data-go]').forEach(a=>a.addEventListener('click',ev=>{ev.preventDefault();if(MQ.matches){if(a.dataset.go.startsWith('hero'))scrollTo({top:0,behavior:'smooth'});else $('#mc').scrollIntoView({behavior:'smooth',block:'center'});return}const [id,f]=a.dataset.go.split(':'),i=IDS.indexOf(id);
  scrollTo({top:M.offsetTop+(S[i]+L[i]*(+f))/100*H,behavior:'smooth'})}));
 </script>
 </body>
