@@ -143,7 +143,7 @@ hero(p){const tl=cl((performance.now()-t0)/1800);
 },
 prod(p){const N=P.length;dots(dp,N,p);
  SL.forEach((s,i)=>{const q=p*N-i,[e,x]=sx(q,i==0,i==N-1),d=i%2?1:-1,v=e*(1-x),b=i?-.04:0;
-  s.el.style.visibility=v>.002?'visible':'hidden';
+  s.el.style.visibility=v>.002?'inherit':'hidden';
   set(s.pc,d*(1-e)*W*.6,-x*H*.25,1-x*.08,d*(1-e)*14,v);s.im.style.transform=`scale(${1.4-.4*e})`;
   s.tx.forEach((el,k)=>{const f=ez(sg(q,b+k*.05,b+.34+k*.05));set(el,-d*(1-f)*W*.25,-x*H*.1,1,0,f*(1-x))});
   s.gw.style.transform=`translate(calc(-50% + ${(q-.5)*-d*W*.3}px),-50%)`;s.gw.style.opacity=v;});
